@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/* Работа со стилями */
+h1 {
+	color: #002fff;
+}
+h2 {
+	color: #ff7b00;
+}
+h3 {
+	color: #000000;
+}
+h4 {
+	color: #8b008b;
+}
+li {
+	color: #800000;
+}
+p {
+	color: #008000;
+}
+p.bloc {
+	color: blueviolet;
+}
+span {
+	color: #ff0000;
+}
+.navigation .link li > a {
+	color: #00b800b2;
+}
+.familiarization p ~ p {
+	color: #ff6347;
+}
+.familiarization p ~ p + p {
+	color: #ff00bf;
+}
+.footer > p {
+	color: #8b0000;
+}
+ol.material > li + li + li + li {
+	color: #000080;
+}
+ol.material > li + li + li {
+	color: #008080;
+}
+ol.material > li + li {
+	color: #778000;
+}
+ol.material > li {
+	color: #ffa51f;
+}
+.job p {
+	color: #0400ff;
+}
