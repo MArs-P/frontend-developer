@@ -1,0 +1,106 @@
+/* Стили обнуления */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-MediumItalic.woff2") format("woff2"),
+		url("../fonts/Gilroy-MediumItalic.woff") format("woff");
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-LightItalic.woff2") format("woff2"), url("../fonts/Gilroy-LightItalic.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	color: #000;
+	line-height: 1;
+	font-family: "Gilroy", sans-serif;
+	font-size: 16px;
+}
+h1 {
+	font-size: 30px;
+	font-family: "Ubuntu", sans-serif;
+	text-align: center;
+	text-decoration: underline;
+}
+h1 span {
+	font-style: italic;
+	color: #ff0000;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+h2 {
+	font-size: 25px;
+	color: #008000;
+}
+h2 span {
+	text-transform: capitalize;
+}
+h3 {
+	font-size: 20px;
+	font-weight: 600px;
+	font-style: italic;
+}
+h3 + p + p {
+	font-size: 40px;
+	text-shadow: 2px 2px 2px gray;
+}
+h3 + p + p + p {
+	font-size: 40px;
+	text-shadow: -2px 2px 2px #367eeb;
+	text-decoration: line-through #ff0000;
+}
+ul > li {
+	color: #0000ff;
+	text-indent: 30px;
+}
