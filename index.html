@@ -1,577 +1,253 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
-		<title>Lesson_7</title>
+		<link rel="stylesheet" href="/css/style.css">
+		<title>Lesson_8</title>
 	</head>
 	<body>
-		<header class="header">
-			<div class="header__logo">
-				<p><span>ma</span>rs_<span>p</span></p>
-			</div>
-			<div class="heading">
-				<h1><span></span>Lesson_7 Background<span></span></h1>
-			</div>
-			<nav class="nav">
-				<ol class="nav__manu">
-					<li><a href="#b_color">Background-color</a></li>
-					<li><a href="#b_image">Background-image</a></li>
-					<li><a href="#b_repeat">Background-repeat</a></li>
-					<li><a href="#b_position">Background-position</a></li>
-					<li><a href="#b_atta">Background-attachment</a></li>
-					<li><a href="#b_size">Background-size</a></li>
-				</ol>
-			</nav>
-		</header>
-		<main class="main">
-			<div class="main__bgc">
-				<h2 class="title2" id="b_color">background <span>-color</span></h2>
-				<ol class="properties">
-					<li> <span>о</span>твечает за раскрашивание фона</li>
-					<li> <span>по</span> умолчанию фон прозрачный</li>
-					<li> <span class="red">не не не</span> имеет размеро задающих свойств</li>
-					<li> <span>с</span>нипет bgc </li>
-				</ol>
-				<h3 class="title3">background <span> display: inline-block;</span></h3>
-				<div class="block">
-					<p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					</p>
-					<p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					</p>
+		<div class="canvas">
+			<header>
+				<div class="header__logo">
+					<p><span>ma</span>rs_<span>p</span></p>
 				</div>
-				<div class="block">
-					<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-						dolor sit amet consectetur adipisicing elit.
-						ipsum explicabo similique atque?
+				<div class= lesson>
+					<h1>Lesson_8</h1>
+				</div>
+				<div class="heading"><span>псевдоклассы </span> <span>псевдоэлементы</span></div>
+			</header>
+			<div class="main">
+				<div class="m__hover">
+					<h2>псевдоклассы</h2>
+					<h3>:hover</h3>
+					<p class="hov__p"> <span>срабатывает при наведении и задаёт новые
+							свойства данному элементу</span>
 					</p>
-					<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-						dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-						consectetur adipisicing elit.
-						ipsum explicabo similique atque?
+					<p class="hov__p1"><span>срабатывает при наведении.</span>
 					</p>
+					<div class="bloc__hov2">
+						<p class="hov__p2">срабатывает при наведении.
+						</p>
+					</div>
 				</div>
-				<h3 class="title3">background <span>display: block;</span> </h3>
-				<div class="block1">
-					<span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						ipsum explicabo similique atque? </span><br>
-					<span> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-						Eligendi
-						deleniti quaerat tempore vero odio.</span>
+				<div class="m__activ">
+					<h3>:activ</h3>
+					<p class="activ__p">срабатывает в момент нажатия а также удержания клика
+						мышки на элементе</p>
+					<p class="activ__p">при равнозначном обращении синтаксиса сначало
+						прописываем свойсва
+						:hover затем :active</p>
+					<p class="activ__p">уместное приминение для назначения стилей кнопкам и
+						ссылкам.</p>
+					<p class="activ__p1">нажми и удержи</p>
 				</div>
-				<h3 class="title3">background <span>Для строчного тега</span></h3>
-				<div class="block2">
-					<span> Eligendi deleniti quaerat tempore vero odio.</span>
-				</div>
-			</div>
-			<div class="main__bgi">
-				<div class="main__bgc">
-					<h2 class="title2" id="b_image">background <span>-image</span></h2>
-					<ol class="properties">
-						<li> <span>У</span>станавливает фоновое изображение</li>
-						<li> <span>п</span>роизводит градиентную заливку</li>
-						<li> <span class="red">не не не</span> имеет размеро задающих свойств</li>
-						<li> <span>с</span>нипет bgi</li>
+				<div class="m__visited">
+					<h3>:visited</h3>
+					<p class="visited__p">предназначен для индификации посещенных ссылок.</p>
+					<p class="visited__p">браузеры строго ограничивают стили, которые
+						можно применить к элементу, используя этот псевдо-класс:
+						только color, background-color, border-color,
+						border-bottom-color, border-left-color, border-right-color,
+						border-top-color, outline-color, column-rule-color,
+						fill и stroke.</p>
+					<p class="visited__p">перечисленные свойства должны быть заданы изначально.
+					</p>
+					<ol class="vis__link">
+						<li><a class="a__vis" href="#">я ссылка :visited</a></li>
+						<li><a class="a__focus" href="#">я ссылка :focus</a></li>
+						<!-- <li><a href="">я ссылка</a></li>
+					<li><a href="">я ссылка</a></li> -->
 					</ol>
 				</div>
-			</div>
-			<div class="main__grad">
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, rerum
-					hic? Veritatis, repudiandae odio.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, rerum
-					hic? Veritatis, repudiandae odio.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, rerum
-					hic? Veritatis, repudiandae odio.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, rerum
-					hic? Veritatis, repudiandae odio.
-				</p>
-			</div>
-			<div class="main__repeat">
-				<h2 class="title2" id="b_repeat">background <span>-repeat</span></h2>
-				<ol class="properties">
-					<li> <span>О</span>пределяет, как будет повторяться фоновое изображение
-					</li>
-				</ol>
-				<h3 class="title3">background <span>repeat</span></h3>
-				<div class="b__repeat">
+				<div class="m__focus">
+					<h3>:focus</h3>
+					<p class="focus__p">применяется для выдиления интерактивного элемента </p>
 				</div>
-				<h3 class="title3">background <span>no-repeat</span></h3>
-				<div class="b__nrepeat">
+				<div class="m__target">
+					<h3>:target</h3>
+					<p class="target__p">срабатывает когда элемент является объектом на который
+						ссылаются.Это обязательно должна быть ссылка.
+					</p>
+					<a class="open" href="#text" id="open">я открываю</a>
+					<div class="text" id="text">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis vitae
+						illum perferendis libero deleniti unde consectetur. Cumque, velit. Est aut
+						laborum atque quidem consequatur soluta voluptates fuga officiis culpa
+						ipsa.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+						vitae
+						illum perferendis libero deleniti unde consectetur. Cumque, velit. Est aut
+						laborum atque quidem consequatur soluta voluptates fuga officiis culpa
+						ipsa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+						vitae illum perferendis libero deleniti unde consectetur. Est aut laborum
+						atque quidem consequatur soluta voluptates fuga officiis culpa ipsa.
+					</div>
+					<p><a class="open" href="#avatarka"> я тоже открываю </a></p>
+					<img class="avimges" id="avatarka" src="/img/avatar_1.jpg" alt="avatar">
+					<a class="close" href="#open">закрываю </a>
 				</div>
-				<h3 class="title3">background <span>repeat-x</span></h3>
-				<div class="b__repeatx">
+				<div class="m__first-child">
+					<h2 class="fl__child">псевдоклассы положения в коде</h2>
+					<h3>:first-child, :last-child</h3>
+					<p class="first__p"><span class="first__s">::first-child</span> обращение
+						непосредствено, к какому-то конкретно первому элементу в блоке ( например
+						span p возможно div или даже класс тега не знаю надо до работать )
+						при этом если данный элемент не является первым в блоке стили к нему
+						применяется не будут.
+					</p>
+					<p class="last__p"><span class="last__s">::last-child</span> обращение
+						непосредствено, к какому-то конкретно последнему элементу в блоке.
+					</p>
+					<div class="fl__d">
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<p class="last__p"><span class="last__s">:last-child</span> тот самый
+						случай
+						когда элемент к которому обращаются (т.е. тег p ) не является последним в
+						блоке. стили не применились.
+					</p>
+					<div class="fl__d">
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<mark>я марк и я последний</mark>
+					</div>
+					<h3>*:first-child, *:last-child</h3>
+					<p class="first__p"><span class="first__s">*:first-child</span> обращение к
+						любому первому элементу
+						в блоке
+					</p>
+					<p class="last__p"><span class="last__s">*:last-child</span> обращение к
+						любому последнему элементу
+						в блоке
+					</p>
+					<div class="flfl__p">
+						<span>я спан я спан</span>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<h3>:first-of-type, :last-of-type</h3>
+					<p class="first__p"><span class="foftype__s">:first-of-type</span>
+						обращение
+						к
+						первому элементу в блоке (в данном случаи к тегу p) не зависимо от того
+						стоят-ли перед ним другие элементы. задовать стили можно как с помощью
+						селектора тегов так и селектора классов
+					</p>
+					<p class="last__p"><span class="loftype__s">:last-of-type</span> обращение
+						к
+						последнему элементу
+						в блоке
+					</p>
+					<div class="fltype__d">
+						<span>я спан</span><span>я спан</span>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<span>я спан</span> <mark>я марк</mark>
+					</div>
+					<h3>:nth-child, :nth-of-type</h3>
+					<p class="first__p"><span class="nthchild__s">:nth-child</span> обращение к
+						объекту через порядковый номер.
+					</p>
+					<p class="last__p"><span class="nthtype__s">:nth-of-type</span> обращение к
+						конкретному тегу (в данном случаи тегу p) через порядковый номер.
+					</p>
+					<div class="flnt__p">
+						<span>я спан</span> <span>я спан</span>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<span>я спан</span> <span>я спан</span>
+					</div>
+					<h3>:nth-child(odd), :nth-child(even)</h3>
+					<p class="first__p"><span class="chodd__s">:nth-child(odd)</span> обращение
+						к нечётным элементам.
+					</p>
+					<p class="last__p"><span class="cheven__s">:nth-child(even)</span>
+						обращение
+						к
+						чётным элементам.
+					</p>
+					<div class="oddeven__p">
+						<span>я спан</span> <span>я спан</span>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+						<span>я спан</span> <span>я спан</span>
+					</div>
 				</div>
-				<h3 class="title3">background <span>repeat-y</span></h3>
-				<div class="b__repeaty">
+				<div class="m__flinflet">
+					<h2>псевдоэлементы</h2>
+					<h3>::first-line, ::first-letter</h3>
+					<p class="firstl__p"> <span class="firstl__s">::first-line</span> задаёт
+						стиль первой строки
+						текста
+					</p>
+					<p class="firstl__p"><span class="firstl__s">::first-letter</span> задаёт
+						стиль первой букве
+						текста
+					</p>
+					<div class="firstll__p">
+						<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+							quidem eligendi, non nobis quod ad, neque nostrum magnam accusamus
+							mollitia quisquam?</p>
+						<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+							quidem eligendi, non nobis quod ad, neque nostrum magnam accusamus
+							mollitia quisquam?</p>
+						<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+							quidem eligendi, non nobis quod ad, neque nostrum magnam accusamus
+							mollitia quisquam?</p>
+					</div>
 				</div>
-				<h3 class="title3">background <span>space</span></h3>
-				<div class="b__repeatsp">
-				</div>
-				<h3 class="title3">background <span>round</span></h3>
-				<div class="b__repeatro">
-				</div>
-			</div>
-			<div class="main__position">
-				<h2 class="title2" id="b_position">background <span>-position</span></h2>
-				<ol class="properties">
-					<li> <span>З</span>адает начальное положение фонового изображения, где
-						первое значение (проценты, px, слово) определяет расположение по
-						горизонтали,
-						второе - вертикали.
-					</li>
-				</ol>
-				<h3 class="title3">background <span>-position</span></h3>
-				<ol class="properties">
-					<li> <span>З</span>начение по умолчанию.
-					</li>
-					<li> <span>с</span>нипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/avatar.jpg') 0 0 no-repeat;}</li>
-							<li>.block{
-								background: url('img/background/avatar.jpg') top left no-repeat;}</li>
-							<li>.block{
-								background-image: url('img/background/avatar.jpg');
-								background-repeat: no-repeat;
-								background-position: 0 0;}</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__position">
-				</div>
-				<h3 class="title3">background <span>-position</span></h3>
-				<ol class="properties">
-					<li> <span>З</span>начение по центру.
-					</li>
-					<li> <span>с</span>нипет универсальный bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/avatar.jpg') 50% no-repeat;
-								}</li>
-							<li>.block{
-								background: url('img/background/avatar.jpg') center no-repeat;
-								}</li>
-							<li>.block{
-								<p>background-image: url('img/background/avatar.jpg');</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-position: 50% 50%;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__positionc">
-				</div>
-				<h3 class="title3">background <span>-position</span></h3>
-				<ol class="properties">
-					<li> <span>З</span>начение слева по центру.
-					</li>
-					<li> <span>с</span>нипет универсальный bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								<p>background: url('img/background/avatar.jpg') 0 50% no-repeat;}</p>
-							</li>
-							<li>.block{
-								<p>background: url('img/background/avatar.jpg') left no-repeat;}</p>
-							</li>
-							<li>.block{
-								<p>background-image: url('img/background/avatar.jpg');</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-position: 0 50%;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__positionl">
-				</div>
-				<h3 class="title3">background <span>-position</span></h3>
-				<ol class="properties">
-					<li> <span>З</span>начение правый нижний угол.
-					</li>
-					<li> <span>с</span>нипет универсальный br+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								<p>background: url('img/background/avatar.jpg') 100% 100% no-repeat;}</p>
-							</li>
-							<li>.block{
-								<p>background: url('img/background/avatar.jpg') bottom right no-repeat;}</p>
-							</li>
-							<li>.block{
-								<p>background-image: url('img/background/avatar.jpg');</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-position: 100% 100%;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__positionbotright">
-				</div>
-				<h3 class="title3">background <span>-position</span></h3>
-				<ol class="properties">
-					<li> <span>З</span>начение позиция.
-					</li>
-					<li> <span>с</span>нипет универсальный br+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								<p>background: url('img/background/avatar.jpg') 25px 30px no-repeat;}</p>
-							</li>
-							<li>.block{
-								<p>background-image: url('img/background/avatar.jpg');</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-position: 25px 30px;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__positionposit">
-				</div>
-			</div>
-			<div class="main__attachment">
-				<h2 class="title2" id="b_atta">background <span>-attachment</span></h2>
-				<ol class="properties">
-					<li> <span>У</span>станавливает, будет ли прокручиваться фоновое
-						изображение
-						вместе с содержимым элемента.
-					</li>
-				</ol>
-				<h3 class="title3">background <span>-attachment: scroll</span></h3>
-				<ol class="properties">
-					<li> <span>З</span>начение по умолчанию. Позволяет перемещаться фону
-						вместе с окном браузера
-					</li>
-					<li> <span>у</span>ниверсальный снипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/bg.jpg') 0 0 no-repeat scroll;}
-							</li>
-							<li>.block{
-								<p>background-image: url('img/background/bg.jpg');</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-position: 0 0;</p>
-								<p>background-attachment: scroll;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__attascroll">
-				</div>
-				<h3 class="title3">background <span>-attachment: fixed</span></h3>
-				<div class="b__attafixed">
-				</div>
-				<ol class="properties">
-					<li> <span>Д</span>елает фоновое изображение элемента неподвижным, а так же
-						устанавливает фоновое изображение относительно окна браузера
-					</li>
-					<li> <span>у</span>ниверсальный снипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/bg.jpg') 0 0 no-repeat fixed;}
-							</li>
-							<li>.block{
-								<p>background-image: url('img/background/bg.jpg');</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-position: 0 0;</p>
-								<p>background-attachment: fixed;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<h3 class="title3">background <span>-attachment: local</span></h3>
-				<ol class="properties">
-					<li> <span>Ф</span>он фиксируется с учётом поведения элемента. Если элемент
-						имеет прокрутку, то фон будет прокручиваться вместе с содержимым, но фон
-						выходящий за рамки элемента остаётся на месте.
-					</li>
-					<li> <span>у</span>ниверсальный снипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/bg.jpg') 0 0 no-repeat local;}
-							</li>
-							<li>.block{
-								<p>background-image: url('img/background/bg.jpg');</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-position: 0 0;</p>
-								<p>background-attachment: local;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__attalocal">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis neque
-					illo eaque est eius illum animi autem dolorum mollitia, assumenda quod
-					itaque quasi numquam architecto enim, consequatur libero deserunt?
-					Deleniti?
-					Dolorum illum aliquid consequatur temporibus corrupti accusantium voluptas?
-					Necessitatibus consequuntur sunt consectetur autem! Voluptatibus ab
-					aspernatur, quidem sit veritatis tempora a cupiditate illo consequatur
-					corporis voluptatum dolorum tempore laborum neque!
-					Reiciendis doloribus, fuga ut dolor consectetur accusamus! Soluta sint
-					maxime, delectus quisquam deleniti perferendis praesentium, architecto,
-					nesciunt impedit ducimus neque numquam doloribus explicabo eum magnam earum
-					sapiente dolorum? Ex, assumenda!
-					Molestias porro ab iste quod voluptates hic fugiat aspernatur accusantium
-					iusto nam, at quibusdam libero cupiditate illum laudantium temporibus
-					asperiores eum dolore minima pariatur ut consequuntur quasi officia.
-					Voluptatum, ducimus!
-					In eum odit sint illum voluptatem pariatur rerum harum eius tempora?
-					Officia aspernatur quae qui quibusdam, repellendus placeat magni quaerat,
-					odio vel provident autem. Reiciendis distinctio dolore vitae impedit
-					deleniti.
-					Corporis assumenda earum explicabo neque corrupti. Neque sequi voluptas
-					animi obcaecati tempora, veritatis omnis dicta sed voluptates tempore,
-					aperiam quasi temporibus quod nulla eius odit ducimus perferendis illum
-					enim ea!
-					Sequi aut modi molestias quisquam ducimus. Consectetur quia laboriosam,
-					animi ipsa repudiandae sed velit impedit alias nihil sequi, nemo magni
-					rerum voluptatibus asperiores. Harum, totam consectetur. Neque labore
-					necessitatibus officia.
-					Minus magnam provident temporibus, aperiam optio suscipit possimus
-					voluptate odit sed, aliquid commodi culpa ducimus dolore necessitatibus ut
-					deleniti nobis dolores? Omnis ex dignissimos suscipit. Molestias nisi ex
-					culpa dolorem.
-					Temporibus placeat eius quibusdam numquam, dolorem ullam maxime dolorum
-					nemo laboriosam, autem esse cumque modi libero, deleniti adipisci ut quas.
-					Autem voluptate voluptatem impedit perspiciatis ipsa nulla, quas mollitia?
-					Blanditiis.
-					Tenetur dicta, reprehenderit blanditiis iusto in sint ullam non quaerat ea,
-					ipsa quia officia asperiores labore voluptatem repudiandae ex cum commodi
-					minima distinctio iste nihil. Aliquid consequuntur minima pariatur nulla.
-					Sint qui repellat quas atque aliquam vero minima impedit ipsa deserunt
-					labore recusandae minus corrupti, quaerat ut fugit similique explicabo
-					magni id quia soluta cumque omnis quidem? Quos, accusantium sint.
-					Voluptatem eos odio laudantium! Excepturi pariatur reiciendis ad quia
-					ratione architecto, deserunt vero alias consectetur fuga illo laborum nulla
-					exercitationem et inventore omnis laboriosam dolore eligendi vitae
-					blanditiis doloribus sed!
-					Esse eligendi tenetur sint veritatis doloremque repellat non tempore,
-					molestias nesciunt numquam dolorum maxime voluptate, provident optio
-					aperiam, praesentium ipsam cum et possimus sit ratione. Sint voluptate
-					facilis molestiae hic.
-					Nobis unde cumque consequatur porro repellendus laboriosam debitis possimus
-					delectus molestiae? Quod excepturi suscipit ad saepe dolor fuga unde minus
-					laborum animi! Alias corrupti assumenda fugiat, repudiandae quis autem
-					quasi?
-					Sit asperiores vel quas eos, voluptatibus consectetur odio nihil dolores
-					numquam dolorum tenetur beatae dolor deserunt, ea rem vero ex, aliquid
-					ducimus minus quidem odit inventore maxime similique repellendus. Quisquam.
-					Error, magni sunt dolores, numquam minus aliquid voluptate illo quis
-					nesciunt pariatur amet distinctio eaque nulla inventore facere quod ea quam
-					veritatis nemo placeat! Similique voluptatem delectus atque in temporibus.
-					Neque, ipsa facere. Porro consequatur ipsam impedit ab eum voluptatibus
-					doloremque voluptates. Debitis voluptas voluptatibus totam fugiat tempore,
-					quaerat mollitia hic ipsam optio, velit dolorem culpa? Est, velit! Sed,
-					maxime!
-					Delectus non voluptatem adipisci expedita doloribus alias amet quaerat
-					voluptate aliquam quia consectetur labore vel odit impedit velit eligendi
-					cupiditate, veritatis deleniti quas ullam! Error deserunt voluptatum vel
-					maiores quis.
-					A, velit accusamus ratione tempore blanditiis maxime aliquid repudiandae
-					illum ut unde ad alias error nemo eos eligendi nostrum modi porro at et
-					delectus deleniti earum eius doloribus distinctio. Voluptatibus.
-					Similique sint ipsam dolorum necessitatibus nobis unde ipsum? Eaque maxime
-					at sapiente vel necessitatibus fuga totam nesciunt qui alias laboriosam ea
-					perspiciatis possimus, quas, praesentium tempore ipsam, adipisci
-					voluptatibus quia!
-					Temporibus sint natus dolor eius tenetur cumque corrupti repudiandae
-					numquam, neque beatae odit, laboriosam quam voluptate inventore. Nihil
-					libero tempora repellat excepturi culpa! Praesentium quisquam quae
-					provident rem laudantium dicta?
+				<div class="m__befafte">
+					<h2>псевдоэлементы ::before, ::after</h2>
+					<h3>::before, ::after</h3>
+					<p class="beaf__p"> <span class="beaf__s">::before, ::after</span>
+						позволяют интегрировать из css в html два дополнительных полноценных
+						объекта. <span class="beaf__s">::before</span> в начале блока <span
+							class="beaf__s">::after</span> в конце блока.
+					</p>
+					<ul class="befafte__ul">
+						<li> <span class="beaf__li">::before, ::after</span> является строчными
+							элементами</li>
+						<li>Работают совместно со свойством <span class="beaf__s">content:""</span>
+						</li>
+					</ul>
+					<div class="befafte__d">
+						<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+							quidem eligendi, non nobis quod ad, neque nostrum magnam accusamus
+							mollitia quisquam?</p>
+						<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+							quidem eligendi, non nobis quod ad, neque nostrum magnam accusamus
+							mollitia quisquam?</p>
+						<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+							quidem eligendi, non nobis quod ad, neque nostrum magnam accusamus
+							mollitia quisquam?</p>
+					</div>
 				</div>
 			</div>
-			<div class="main__size">
-				<h2 class="title2" id="b_size">background <span>-size</span></h2>
-				<ol class="properties">
-					<li> <span>М</span>асштабирует фоновое изображение согласно заданным
-						размерам. В цифрах, где первое значение (проценты, px) определяет ширину,
-						второе - высоту. Либо специальным значением.
-					</li>
-				</ol>
-				<h3 class="title3">background <span>-size</span></h3>
-				<ol class="properties">
-					<li> <span>Р</span>азмеры картинки по умолчанию
-					</li>
-					<li> <span>у</span>ниверсальный снипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/bg.jpg') 0 0/auto auto no-repeat;}
-							</li>
-							<li>.block{
-								<p> background-image: url('img/background/bg.jpg');</p>
-								<p>background-position: 0 0;</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-size: auto auto;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__sizeauto">
-				</div>
-				<h3 class="title3">background <span>-size</span></h3>
-				<ol class="properties">
-					<li> <span>Р</span>азмеры картинки по ширине блока
-					</li>
-					<li> <span>у</span>ниверсальный снипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/bg.jpg') 0 0/100% auto no-repeat;}
-							</li>
-							<li>.block{
-								<p> background-image: url('img/background/bg.jpg');</p>
-								<p>background-position: 0 0;</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-size: 100% auto;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__sizewidth">
-				</div>
-				<h3 class="title3">background <span>-size</span></h3>
-				<ol class="properties">
-					<li> <span>Р</span>азмеры картинки по высоте блока
-					</li>
-					<li> <span>у</span>ниверсальный снипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/bg.jpg') 0 0/auto 100% no-repeat;}
-							</li>
-							<li>.block{
-								<p> background-image: url('img/background/bg.jpg');</p>
-								<p>background-position: 0 0;</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-size: auto 100%;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__sizeheight">
-				</div>
-				<h3 class="title3">background <span>-size</span></h3>
-				<ol class="properties">
-					<li> <span>Р</span>асстягиваем картинку на всю ширину и высоту блока
-					</li>
-					<li> <span>у</span>ниверсальный снипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/bg.jpg') 0 0/100% 100% no-repeat;}
-							</li>
-							<li>.block{
-								<p> background-image: url('img/background/bg.jpg');</p>
-								<p>background-position: 0 0;</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-size: 100% 100%;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__sizewh">
-				</div>
-				<h3 class="title3">background <span>-size</span></h3>
-				<ol class="properties">
-					<li> <span>М</span>асштабирует изображение с сохранением пропорций таким
-						образом, чтобы картинка целиком поместилась внутрь блока. То есть по
-						меньшей стороне картинки
-					</li>
-					<li> <span>у</span>ниверсальный снипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/bg.jpg') 0 0/contain no-repeat;}
-							</li>
-							<li>.block{
-								<p> background-image: url('img/background/bg.jpg');</p>
-								<p>background-position: 0 0;</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-size: contain;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__sizecont">
-				</div>
-				<h3 class="title3">background <span>-size</span></h3>
-				<ol class="properties">
-					<li> <span>М</span>асштабирует изображение с сохранением пропорций так,
-						чтобы его ширина или высота равнялась ширине или высоте блока. То есть по
-						большей стороне картинки
-					</li>
-					<li> <span>у</span>ниверсальный снипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/bg.jpg') 0 0/cover no-repeat;}
-							</li>
-							<li>.block{
-								<p> background-image: url('img/background/bg.jpg');</p>
-								<p>background-position: 0 0;</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-size: cover;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__sizecover">
-				</div>
-				<h3 class="title3">background <span>-size</span></h3>
-				<ol class="properties">
-					<li> <span>У</span>станавливаем конкретные размеры. Если установлено одно
-						значение, оно задает ширину фона, второе значение принимается за auto.
-						Пропорции картинки при этом сохраняются. Использование двух значений через
-						пробел задает ширину и высоту фоновой картинки
-					</li>
-					<li> <span>у</span>ниверсальный снипет bg+
-					</li>
-					<li> <span>С</span>интаксис написания
-						<ol class="syntax">
-							<li>.block{
-								background: url('img/background/bg.jpg') 0 0/200px 150px no-repeat;}
-							</li>
-							<li>.block{
-								<p> background-image: url('img/background/bg.jpg');</p>
-								<p>background-position: 0 0;</p>
-								<p>background-repeat: no-repeat;</p>
-								<p>background-size: 200px 150px;}</p>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="b__sizesize">
-				</div>
-			</div>
-		</main>
+		</div>
 	</body>
 </html>
